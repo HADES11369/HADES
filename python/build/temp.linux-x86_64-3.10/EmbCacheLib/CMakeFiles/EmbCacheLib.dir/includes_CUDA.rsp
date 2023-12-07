@@ -1,0 +1,1 @@
+-isystem=/usr/include/python3.10 -isystem="/home/jwy/venv/lib/python3.10/site-packages/pybind11/include" -isystem="/home/jwy/venv/lib/python3.10/site-packages/torch/include" -isystem="/home/jwy/venv/lib/python3.10/site-packages/torch/include/torch/csrc/api/include" -isystem=/usr/local/cuda/include

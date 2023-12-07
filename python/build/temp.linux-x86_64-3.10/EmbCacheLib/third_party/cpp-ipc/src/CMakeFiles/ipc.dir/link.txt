@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/libipc.a CMakeFiles/ipc.dir/libipc/buffer.cpp.o CMakeFiles/ipc.dir/libipc/ipc.cpp.o CMakeFiles/ipc.dir/libipc/pool_alloc.cpp.o CMakeFiles/ipc.dir/libipc/shm.cpp.o CMakeFiles/ipc.dir/libipc/sync/condition.cpp.o CMakeFiles/ipc.dir/libipc/sync/mutex.cpp.o CMakeFiles/ipc.dir/libipc/sync/semaphore.cpp.o CMakeFiles/ipc.dir/libipc/sync/waiter.cpp.o CMakeFiles/ipc.dir/libipc/platform/platform.c.o CMakeFiles/ipc.dir/libipc/platform/platform.cpp.o
+/usr/bin/ranlib ../../../lib/libipc.a
