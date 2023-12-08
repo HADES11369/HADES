@@ -64,18 +64,12 @@ if __name__ == "__main__":
         g, _ = load_ogb("ogbn-products", args.root)
     elif args.dataset == "ogbn-papers100M":
         g, _ = load_ogb("ogbn-papers100M", args.root)
-    elif args.dataset == "friendster":
-        g, _ = load_friendster(args.root)
-    elif args.dataset == "livejournal":
-        g, _ = load_livejournal(args.root)
     g = g.formats("coo")
     g.create_formats_()
     print("load {} takes {:.3f} seconds".format(args.dataset,
                                                 time.time() - start))
     print("|V|={}, |E|={}".format(g.num_nodes(), g.num_edges()))
-    print("train: {}".format(
-        th.sum(g.ndata["train_mask"])
-    ))
+    print("train: {}".format(th.sum(g.ndata["train_mask"])))
     if args.balance_train:
         balance_ntypes = g.ndata["train_mask"]
     else:

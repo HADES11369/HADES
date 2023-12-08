@@ -65,7 +65,3 @@ target_compile_features(EmbCacheLib PRIVATE cxx_std_17)
 
 # Link against LibTorch
 target_link_libraries(EmbCacheLib PRIVATE ${EmbCacheLib_EXTERNAL_LIB})
-
-# file(GLOB TEST_SRC src/cache/test.cc)
-# add_executable(test ${TEST_SRC})
-# target_link_libraries(test PRIVATE ${EmbCacheLib_EXTERNAL_LIB})

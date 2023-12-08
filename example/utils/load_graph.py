@@ -48,30 +48,6 @@ def load_ogb(name, root="dataset"):
     return graph, num_labels
 
 
-def load_friendster(root="dataset"):
-    print("load friendster")
-    g = dgl.load_graphs(os.path.join(root, "graph.dgl"))[0][0]
-    train_nid = th.load(os.path.join(root, "train_idx.pt"))
-    train_mask = th.zeros((g.num_nodes(), ), dtype=th.bool)
-    train_mask[train_nid] = True
-    g.ndata["train_mask"] = train_mask
-    print("finish loading friendster")
-    num_classes = 1
-    return g, num_classes
-
-
-def load_livejournal(root="dataset"):
-    print("load livejournal")
-    g = dgl.load_graphs(os.path.join(root, "graph.dgl"))[0][0]
-    train_nid = th.load(os.path.join(root, "train_idx.pt"))
-    train_mask = th.zeros((g.num_nodes(), ), dtype=th.bool)
-    train_mask[train_nid] = True
-    g.ndata["train_mask"] = train_mask
-    print("finish loading livejournal")
-    num_classes = 1
-    return g, num_classes
-
-
 def inductive_split(g):
     """Split the graph into training graph, validation graph, and test graph by training
     and validation masks.  Suitable for inductive models."""

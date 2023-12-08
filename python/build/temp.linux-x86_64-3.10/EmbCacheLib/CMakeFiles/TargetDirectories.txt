@@ -1,3 +1,0 @@
-/home/jwy/EmbCacheManager/python/build/temp.linux-x86_64-3.10/EmbCacheLib/CMakeFiles/EmbCacheLib.dir
-/home/jwy/EmbCacheManager/python/build/temp.linux-x86_64-3.10/EmbCacheLib/CMakeFiles/edit_cache.dir
-/home/jwy/EmbCacheManager/python/build/temp.linux-x86_64-3.10/EmbCacheLib/CMakeFiles/rebuild_cache.dir
